@@ -14,6 +14,11 @@
 		AA335F611BA9270100451BB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA335F5F1BA9270100451BB4 /* LaunchScreen.storyboard */; };
 		AA335F6C1BA9270100451BB4 /* CollectionViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA335F6B1BA9270100451BB4 /* CollectionViewsTests.swift */; };
 		AA335F771BA9270100451BB4 /* CollectionViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA335F761BA9270100451BB4 /* CollectionViewsUITests.swift */; };
+		AA335F851BAA346F00451BB4 /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA335F841BAA346F00451BB4 /* HeaderCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		AA335F871BAA348400451BB4 /* HeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA335F861BAA348400451BB4 /* HeaderCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		AA335F891BAE127800451BB4 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA335F881BAE127800451BB4 /* NewsTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		AA335F8B1BAE129300451BB4 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA335F8A1BAE129300451BB4 /* NewsTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		AA335F8D1BAE154600451BB4 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = AA335F8C1BAE154600451BB4 /* Images */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		AA335F721BA9270100451BB4 /* CollectionViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA335F761BA9270100451BB4 /* CollectionViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewsUITests.swift; sourceTree = "<group>"; };
 		AA335F781BA9270100451BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA335F841BAA346F00451BB4 /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		AA335F861BAA348400451BB4 /* HeaderCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCollectionViewCell.xib; sourceTree = "<group>"; };
+		AA335F881BAE127800451BB4 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		AA335F8A1BAE129300451BB4 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		AA335F8C1BAE154600451BB4 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,15 @@
 			children = (
 				AA335F561BA9270100451BB4 /* AppDelegate.swift */,
 				AA335F581BA9270100451BB4 /* ViewController.swift */,
+				AA335F841BAA346F00451BB4 /* HeaderCollectionViewCell.swift */,
+				AA335F881BAE127800451BB4 /* NewsTableViewCell.swift */,
+				AA335F861BAA348400451BB4 /* HeaderCollectionViewCell.xib */,
+				AA335F8A1BAE129300451BB4 /* NewsTableViewCell.xib */,
 				AA335F5A1BA9270100451BB4 /* Main.storyboard */,
 				AA335F5D1BA9270100451BB4 /* Assets.xcassets */,
 				AA335F5F1BA9270100451BB4 /* LaunchScreen.storyboard */,
 				AA335F621BA9270100451BB4 /* Info.plist */,
+				AA335F8C1BAE154600451BB4 /* Images */,
 			);
 			path = CollectionViews;
 			sourceTree = "<group>";
@@ -192,6 +207,7 @@
 				TargetAttributes = {
 					AA335F521BA9270100451BB4 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = METF7ZXEP6;
 					};
 					AA335F661BA9270100451BB4 = {
 						CreatedOnToolsVersion = 7.0;
@@ -229,8 +245,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA335F611BA9270100451BB4 /* LaunchScreen.storyboard in Resources */,
+				AA335F871BAA348400451BB4 /* HeaderCollectionViewCell.xib in Resources */,
 				AA335F5E1BA9270100451BB4 /* Assets.xcassets in Resources */,
 				AA335F5C1BA9270100451BB4 /* Main.storyboard in Resources */,
+				AA335F8D1BAE154600451BB4 /* Images in Resources */,
+				AA335F8B1BAE129300451BB4 /* NewsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA335F851BAA346F00451BB4 /* HeaderCollectionViewCell.swift in Sources */,
 				AA335F591BA9270100451BB4 /* ViewController.swift in Sources */,
+				AA335F891BAE127800451BB4 /* NewsTableViewCell.swift in Sources */,
 				AA335F571BA9270100451BB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,10 +419,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CollectionViews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.santosh.CollectionViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -409,10 +433,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CollectionViews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.santosh.CollectionViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
